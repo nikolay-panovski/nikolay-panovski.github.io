@@ -20,6 +20,8 @@ import MD_TTT_Starter from "components/ContentMarkdown/StarterParagraph/TTT_Embe
 import MD_TTT_Main from "components/ContentMarkdown/MainParagraph/TTT_Embed.md";
 import MD_Godot_Starter from "components/ContentMarkdown/StarterParagraph/Godot_First.md";
 import MD_Godot_Main from "components/ContentMarkdown/MainParagraph/Godot_First.md";
+import MD_GameJams_Starter from "components/ContentMarkdown/StarterParagraph/GameJamGames.md";
+import MD_GameJams_Main from "components/ContentMarkdown/MainParagraph/GameJamGames.md";
 
 import GitHubLogo from "icons/Logo_GitHub_Light.png";
 import UnityWebLogo from "icons/logo-unity-light.png";
@@ -30,6 +32,41 @@ async function fetchMarkdownText(markdown) {
 }
 
 const ListOfProjectContent = [
+    {
+        name: "Game jam experiences",
+        backgroundURL: "/images/GameJamGame2_Cover.png",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
+        clientProperty: "",
+        locationProperty: "",
+        headerContent: [
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZpZbaCFsU24?si=ym7rYpWMxhJh3yeI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+        ],
+        headerButtons: [
+            <a href="https://nikolay-panovski.github.io/NonXPGameJam_Build/"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={UnityWebLogo} alt="Unity logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Play in browser</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/NonXPGameJam"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub source</p>
+            </a>,
+        ],
+        mainGalleryContent: [
+            <a href="/docs/PP4_LO1_Devlog.pdf"><img src="/images/gallery/GameJamGames/REFL_DevlogFeedback.png" alt="GameJamGames" /></a>,
+            <a href="/docs/PP4_LO3_Process&Benchmark document.pdf"><img src="/images/gallery/GameJamGames/LO3_P&B_ComparisonMatrix_Comparison1.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/GameJamGame2_Start.png"><img src="/images/gallery/GameJamGames/GameJamGame2_Start.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/REFL_GameOlder.png"><img src="/images/gallery/GameJamGames/REFL_GameOlder.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/Planning_TrelloTasks_5_Timeout_WorkDone.png"><img src="/images/gallery/GameJamGames/Planning_TrelloTasks_5_Timeout_WorkDone.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/DEVLOG_15B_FinalHour_AlmostFinalUI.png"><img src="/images/gallery/GameJamGames/DEVLOG_15B_FinalHour_AlmostFinalUI.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/DEVLOG_17A_AfterTime_StartScreen.png"><img src="/images/gallery/GameJamGames/DEVLOG_17A_AfterTime_StartScreen.png" alt="GameJamGames" /></a>,
+            
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_GameJams_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_GameJams_Main),
+    },
     {
         name: "Godot - First mechanics",
         backgroundURL: "/images/Godot_Cover.png",

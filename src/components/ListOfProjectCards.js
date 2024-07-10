@@ -16,6 +16,23 @@ import GodotLogo from "icons/logo-godot-color.png";
 
 const ListOfProjectCards = [
     {
+        name: "Game jam experiences",
+        coverUrl: "/images/GameJamGame2_Cover.png",
+        tags: ["Unity", "Games"],
+        durationDescriber: "Duration",
+        durationProperty: "2 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `XP Game Jam 2024 with the theme "You can't save them all", approached in two ways - team and solo!
+                    Featuring a small raindrop collection game and reflections on the experiences.`
+    },
+    {
         name: "Godot - First mechanics",
         coverUrl: "/images/Godot_Cover.png",
         tags: ["Godot", "Games"],
