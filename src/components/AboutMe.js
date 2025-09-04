@@ -22,7 +22,7 @@ function AboutMe() {
                     Hello again! I'm Nikolay.
                     <br />
                     <br />
-                    I'm a programming student at Saxion (NL). I like getting to the bottom of digital problems,
+                    I'm a programming graduate from Saxion (NL). I like getting to the bottom of digital problems,
                     and here I find plenty of those. I also have a knack for clicking documentation links
                     and accidentally finding interesting stuff.
                     <br />
