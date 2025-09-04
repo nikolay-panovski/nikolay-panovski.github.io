@@ -33,39 +33,62 @@ async function fetchMarkdownText(markdown) {
 
 const ListOfProjectContent = [
     {
-        name: "Game jam experiences",
-        backgroundURL: "/images/GameJamGame2_Cover.png",
-        durationProperty: "2 weeks",
-        teamProperty: "Individual",
-        clientProperty: "",
-        locationProperty: "",
+        name: "Furfare",
+        backgroundURL: "/images/furfare_main_menu_temp.png",
+        durationProperty: "8 weeks",
+        teamProperty: "2 programmers (Group project)",
+        clientProperty: "WIRWAR Festival (Netherlands)",
+        locationProperty: "Enschede (Netherlands)",
         headerContent: [
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZpZbaCFsU24?si=ym7rYpWMxhJh3yeI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XVgqGERoLbc?si=N-GjvvXNDY0dwiqY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+            
         ],
         headerButtons: [
-            <a href="https://nikolay-panovski.github.io/NonXPGameJam_Build/"
+            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/releases/tag/v1.1.0-tweaks"
             className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={UnityWebLogo} alt="Unity logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">Play in browser</p>
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Download Furfare</p>
             </a>,
-            <a href="https://github.com/nikolay-panovski/NonXPGameJam"
+            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/"
             className="header-btn flex flex-row justify-evenly items-center p-4">
                 <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">See GitHub source</p>
+                <p className="font-bold text-2xl">See source code</p>
             </a>,
         ],
         mainGalleryContent: [
-            <a href="/docs/PP4_LO1_Devlog.pdf"><img src="/images/gallery/GameJamGames/REFL_DevlogFeedback.png" alt="GameJamGames" /></a>,
-            <a href="/docs/PP4_LO3_Process&Benchmark document.pdf"><img src="/images/gallery/GameJamGames/LO3_P&B_ComparisonMatrix_Comparison1.png" alt="GameJamGames" /></a>,
-            <a href="/images/gallery/GameJamGames/GameJamGame2_Start.png"><img src="/images/gallery/GameJamGames/GameJamGame2_Start.png" alt="GameJamGames" /></a>,
-            <a href="/images/gallery/GameJamGames/REFL_GameOlder.png"><img src="/images/gallery/GameJamGames/REFL_GameOlder.png" alt="GameJamGames" /></a>,
-            <a href="/images/gallery/GameJamGames/Planning_TrelloTasks_5_Timeout_WorkDone.png"><img src="/images/gallery/GameJamGames/Planning_TrelloTasks_5_Timeout_WorkDone.png" alt="GameJamGames" /></a>,
-            <a href="/images/gallery/GameJamGames/DEVLOG_15B_FinalHour_AlmostFinalUI.png"><img src="/images/gallery/GameJamGames/DEVLOG_15B_FinalHour_AlmostFinalUI.png" alt="GameJamGames" /></a>,
-            <a href="/images/gallery/GameJamGames/DEVLOG_17A_AfterTime_StartScreen.png"><img src="/images/gallery/GameJamGames/DEVLOG_17A_AfterTime_StartScreen.png" alt="GameJamGames" /></a>,
-            
+            <a href="/images/gallery/Furfare/CharacterSelect.png"><img src="/images/gallery/Furfare/CharacterSelect.png" alt="Game character select screen" /></a>,
+            <a href="/images/gallery/Furfare/Infographic.png"><img src="/images/gallery/Furfare/Infographic.png" alt="Infographic screen" /></a>,
+            <a href="/images/gallery/Furfare/GameFrame1.png"><img src="/images/gallery/Furfare/GameFrame1.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/GameFrame2.png"><img src="/images/gallery/Furfare/GameFrame2.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/TheEnd.png"><img src="/images/gallery/Furfare/TheEnd.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/Game_PlaytestW6.png"><img src="/images/gallery/Furfare/Game_PlaytestW6.png" alt="Game view from earlier playtest" /></a>,
+            <a href="/images/gallery/Furfare/Game_Playtest2.png"><img src="/images/gallery/Furfare/Game_Playtest2.png" alt="Game view from earlier playtest" /></a>,
+
         ],
-        starterParagraphContent: await fetchMarkdownText(MD_GameJams_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_GameJams_Main),
+        starterParagraphContent: await fetchMarkdownText(MD_Furfare_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_Furfare_Main),
+    },
+    {
+        name: "Tower defense prototype",
+        backgroundURL: "/images/gallery/SA_TowerDefense/BuildPhase.png",
+        durationProperty: "5 weeks",
+        teamProperty: "Individual",
+        clientProperty: "",
+        locationProperty: "Enschede (Netherlands)",
+        headerContent: [
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/relt5flWIDo?si=slNYJiU5it1mC0_T" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        ],
+        headerButtons: [
+
+        ],
+        mainGalleryContent: [
+            <a href="/images/gallery/SA_TowerDefense/BuildPhase.png"><img src="/images/gallery/SA_TowerDefense/BuildPhase.png" alt="Tower defense game with design patterns" /></a>,
+            <a href="/images/gallery/SA_TowerDefense/GameOver.png"><img src="/images/gallery/SA_TowerDefense/GameOver.png" alt="Tower defense game with design patterns" /></a>,
+            <a href="/images/gallery/SA_TowerDefense/Requirements.png"><img src="/images/gallery/SA_TowerDefense/Requirements.png" alt="Tower defense game with design patterns" /></a>,
+            <a href="/images/gallery/SA_TowerDefense/UMLClass.png"><img src="/images/gallery/SA_TowerDefense/UMLClass.png" alt="Tower defense game with design patterns" /></a>,
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_TowerD_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_TowerD_Main),
     },
     {
         name: "Godot - First mechanics",
@@ -105,6 +128,141 @@ const ListOfProjectContent = [
         ],
         starterParagraphContent: await fetchMarkdownText(MD_Godot_Starter),
         mainParagraphContent: await fetchMarkdownText(MD_Godot_Main),
+    },
+    {
+        name: "Desk Research: Game Feel",
+        backgroundURL: "/images/GameFeel_Poster_Cover.png",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
+        clientProperty: "",
+        locationProperty: "",
+        headerContent: [
+            
+        ],
+        headerButtons: [
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Paper.pdf"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">View white paper</p>
+            </a>,
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Poster.pdf"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">View poster</p>
+            </a>,
+        ],
+        mainGalleryContent: [
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Paper.pdf"><img src="/images/gallery/Juice_Desk/Paper_Cover.png" alt="Game Feel White paper" /></a>,
+            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Poster.pdf"><img src="/images/GameFeel_Poster_Cover.png" alt="Game Feel Poster" /></a>,
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_JuiceD_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_JuiceD_Main),
+    },
+    {
+        name: "Research: Embedding languages for game modding",
+        backgroundURL: "https://wofsauge.github.io/IsaacDocs/rep/images/infographics/Isaac%20Callbacks.svg",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
+        clientProperty: "",
+        locationProperty: "",
+        headerContent: [
+            
+        ],
+        headerButtons: [
+            <a href="https://github.com/nikolay-panovski/TTT_EmbedInCPP/wiki"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub wiki</p>
+            </a>,
+        ],
+        mainGalleryContent: [
+            <a href="/images/TTT_embed_flow_Cover.png"><img src="/images/TTT_embed_flow_Cover.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
+            <a href="/images/gallery/TTT_Embed/chart1.png"><img src="/images/gallery/TTT_Embed/chart1.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
+            <a href="/images/gallery/TTT_Embed/chart2.png"><img src="/images/gallery/TTT_Embed/chart2.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_TTT_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_TTT_Main),
+    },
+
+];
+
+export default ListOfProjectContent;
+
+
+// 
+// ====== SHELVED PROJECTS ======
+/**
+    {
+        name: "Web Development Projects",
+        backgroundURL: "/images/EASV_Front.jpg",
+        durationProperty: "Various",
+        teamProperty: "Individual",
+        clientProperty: "Minor Web Development",
+        locationProperty: "EASV, Esbjerg, Denmark",
+        headerContent: [
+            
+        ],
+        headerButtons: [
+            <a href="https://github.com/nikolay-panovski/PWA_todoapp_frontend"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code - PWA site (JS)</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/DE_GamesCatalog"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code - DevEnv app (ASP.NET)</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/nikolay-panovski.github.io"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code - Portfolio site</p>
+            </a>,
+        ],
+        mainGalleryContent: [
+            <a href="/images/EASV_WebDev_Cover.png"><img src="/images/EASV_WebDev_Cover.png" alt="Web dev project: PWA/API" /></a>,
+            <a href="/images/gallery/WebDev/DevEnv_Cover.png"><img src="/images/gallery/WebDev/DevEnv_Cover.png" alt="Web dev project: Development Environments" /></a>,
+            <a href="/images/gallery/WebDev/API_Code.png"><img src="/images/gallery/WebDev/API_Code.png" alt="Web dev code: PWA/API" /></a>,
+            <a href="/images/gallery/WebDev/DevEnv_Code.png"><img src="/images/gallery/WebDev/DevEnv_Code.png" alt="Web dev code: Development Environments" /></a>,
+            <a href="/images/gallery/WebDev/WebXR_Cover.png"><img src="/images/gallery/WebDev/WebXR_Cover.png" alt="Web dev project: AR/VR Development" /></a>,
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_WebDev_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_WebDev_Main),
+    },
+    {
+        name: "Game jam experiences",
+        backgroundURL: "/images/GameJamGame2_Cover.png",
+        durationProperty: "2 weeks",
+        teamProperty: "Individual",
+        clientProperty: "",
+        locationProperty: "",
+        headerContent: [
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZpZbaCFsU24?si=ym7rYpWMxhJh3yeI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+        ],
+        headerButtons: [
+            <a href="https://nikolay-panovski.github.io/NonXPGameJam_Build/"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={UnityWebLogo} alt="Unity logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Play in browser</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/NonXPGameJam"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See GitHub source</p>
+            </a>,
+        ],
+        mainGalleryContent: [
+            <a href="/docs/PP4_LO1_Devlog.pdf"><img src="/images/gallery/GameJamGames/REFL_DevlogFeedback.png" alt="GameJamGames" /></a>,
+            <a href="/docs/PP4_LO3_Process&Benchmark document.pdf"><img src="/images/gallery/GameJamGames/LO3_P&B_ComparisonMatrix_Comparison1.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/GameJamGame2_Start.png"><img src="/images/gallery/GameJamGames/GameJamGame2_Start.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/REFL_GameOlder.png"><img src="/images/gallery/GameJamGames/REFL_GameOlder.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/Planning_TrelloTasks_5_Timeout_WorkDone.png"><img src="/images/gallery/GameJamGames/Planning_TrelloTasks_5_Timeout_WorkDone.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/DEVLOG_15B_FinalHour_AlmostFinalUI.png"><img src="/images/gallery/GameJamGames/DEVLOG_15B_FinalHour_AlmostFinalUI.png" alt="GameJamGames" /></a>,
+            <a href="/images/gallery/GameJamGames/DEVLOG_17A_AfterTime_StartScreen.png"><img src="/images/gallery/GameJamGames/DEVLOG_17A_AfterTime_StartScreen.png" alt="GameJamGames" /></a>,
+            
+        ],
+        starterParagraphContent: await fetchMarkdownText(MD_GameJams_Starter),
+        mainParagraphContent: await fetchMarkdownText(MD_GameJams_Main),
     },
     {
         name: "City games concept prototype",
@@ -173,79 +331,6 @@ const ListOfProjectContent = [
         ],
         starterParagraphContent: await fetchMarkdownText(MD_ScrMult_Starter),
         mainParagraphContent: await fetchMarkdownText(MD_ScrMult_Main),
-    },
-    {
-        name: "Furfare",
-        backgroundURL: "/images/furfare_main_menu_temp.png",
-        durationProperty: "8 weeks",
-        teamProperty: "2 programmers (Group project)",
-        clientProperty: "WIRWAR Festival (Netherlands)",
-        locationProperty: "Enschede (Netherlands)",
-        headerContent: [
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XVgqGERoLbc?si=N-GjvvXNDY0dwiqY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
-            
-        ],
-        headerButtons: [
-            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/releases/tag/v1.1.0"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">Download Furfare</p>
-            </a>,
-            <a href="https://github.com/nikolay-panovski/ProjectShowoff_Furfare/"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">See source code</p>
-            </a>,
-        ],
-        mainGalleryContent: [
-            <a href="/images/gallery/Furfare/CharacterSelect.png"><img src="/images/gallery/Furfare/CharacterSelect.png" alt="Game character select screen" /></a>,
-            <a href="/images/gallery/Furfare/Infographic.png"><img src="/images/gallery/Furfare/Infographic.png" alt="Infographic screen" /></a>,
-            <a href="/images/gallery/Furfare/GameFrame1.png"><img src="/images/gallery/Furfare/GameFrame1.png" alt="Game view from earlier playtest" /></a>,
-            <a href="/images/gallery/Furfare/GameFrame2.png"><img src="/images/gallery/Furfare/GameFrame2.png" alt="Game view from earlier playtest" /></a>,
-            <a href="/images/gallery/Furfare/TheEnd.png"><img src="/images/gallery/Furfare/TheEnd.png" alt="Game view from earlier playtest" /></a>,
-            <a href="/images/gallery/Furfare/Game_PlaytestW6.png"><img src="/images/gallery/Furfare/Game_PlaytestW6.png" alt="Game view from earlier playtest" /></a>,
-            <a href="/images/gallery/Furfare/Game_Playtest2.png"><img src="/images/gallery/Furfare/Game_Playtest2.png" alt="Game view from earlier playtest" /></a>,
-
-        ],
-        starterParagraphContent: await fetchMarkdownText(MD_Furfare_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_Furfare_Main),
-    },
-    {
-        name: "Web Development Projects",
-        backgroundURL: "/images/EASV_Front.jpg",
-        durationProperty: "Various",
-        teamProperty: "Individual",
-        clientProperty: "Minor Web Development",
-        locationProperty: "EASV, Esbjerg, Denmark",
-        headerContent: [
-            
-        ],
-        headerButtons: [
-            <a href="https://github.com/nikolay-panovski/PWA_todoapp_frontend"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">Code - PWA site (JS)</p>
-            </a>,
-            <a href="https://github.com/nikolay-panovski/DE_GamesCatalog"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">Code - DevEnv app (ASP.NET)</p>
-            </a>,
-            <a href="https://github.com/nikolay-panovski/nikolay-panovski.github.io"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">Code - Portfolio site</p>
-            </a>,
-        ],
-        mainGalleryContent: [
-            <a href="/images/EASV_WebDev_Cover.png"><img src="/images/EASV_WebDev_Cover.png" alt="Web dev project: PWA/API" /></a>,
-            <a href="/images/gallery/WebDev/DevEnv_Cover.png"><img src="/images/gallery/WebDev/DevEnv_Cover.png" alt="Web dev project: Development Environments" /></a>,
-            <a href="/images/gallery/WebDev/API_Code.png"><img src="/images/gallery/WebDev/API_Code.png" alt="Web dev code: PWA/API" /></a>,
-            <a href="/images/gallery/WebDev/DevEnv_Code.png"><img src="/images/gallery/WebDev/DevEnv_Code.png" alt="Web dev code: Development Environments" /></a>,
-            <a href="/images/gallery/WebDev/WebXR_Cover.png"><img src="/images/gallery/WebDev/WebXR_Cover.png" alt="Web dev project: AR/VR Development" /></a>,
-        ],
-        starterParagraphContent: await fetchMarkdownText(MD_WebDev_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_WebDev_Main),
     },
     {
         name: "RFID Interactive Video Experience",
@@ -335,83 +420,5 @@ const ListOfProjectContent = [
         starterParagraphContent: await fetchMarkdownText(MD_JuiceP_Starter),
         mainParagraphContent: await fetchMarkdownText(MD_JuiceP_Main),
     },
-    {
-        name: "Desk Research: Game Feel",
-        backgroundURL: "/images/GameFeel_Poster_Cover.png",
-        durationProperty: "2 weeks",
-        teamProperty: "Individual",
-        clientProperty: "",
-        locationProperty: "",
-        headerContent: [
-            
-        ],
-        headerButtons: [
-            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Paper.pdf"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">View white paper</p>
-            </a>,
-            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Poster.pdf"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={DownloadLogo} alt="Download logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">View poster</p>
-            </a>,
-        ],
-        mainGalleryContent: [
-            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Paper.pdf"><img src="/images/gallery/Juice_Desk/Paper_Cover.png" alt="Game Feel White paper" /></a>,
-            <a href="/docs/492686_Panovski_Nikolay_AR_GameFeel_Poster.pdf"><img src="/images/GameFeel_Poster_Cover.png" alt="Game Feel Poster" /></a>,
-        ],
-        starterParagraphContent: await fetchMarkdownText(MD_JuiceD_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_JuiceD_Main),
-    },
-    {
-        name: "Tower defense prototype",
-        backgroundURL: "/images/gallery/SA_TowerDefense/BuildPhase.png",
-        durationProperty: "5 weeks",
-        teamProperty: "Individual",
-        clientProperty: "",
-        locationProperty: "Enschede (Netherlands)",
-        headerContent: [
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/relt5flWIDo?si=slNYJiU5it1mC0_T" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        ],
-        headerButtons: [
 
-        ],
-        mainGalleryContent: [
-            <a href="/images/gallery/SA_TowerDefense/BuildPhase.png"><img src="/images/gallery/SA_TowerDefense/BuildPhase.png" alt="Tower defense game with design patterns" /></a>,
-            <a href="/images/gallery/SA_TowerDefense/GameOver.png"><img src="/images/gallery/SA_TowerDefense/GameOver.png" alt="Tower defense game with design patterns" /></a>,
-            <a href="/images/gallery/SA_TowerDefense/Requirements.png"><img src="/images/gallery/SA_TowerDefense/Requirements.png" alt="Tower defense game with design patterns" /></a>,
-            <a href="/images/gallery/SA_TowerDefense/UMLClass.png"><img src="/images/gallery/SA_TowerDefense/UMLClass.png" alt="Tower defense game with design patterns" /></a>,
-        ],
-        starterParagraphContent: await fetchMarkdownText(MD_TowerD_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_TowerD_Main),
-    },
-    {
-        name: "Research: Embedding languages for game modding",
-        backgroundURL: "https://wofsauge.github.io/IsaacDocs/rep/images/infographics/Isaac%20Callbacks.svg",
-        durationProperty: "2 weeks",
-        teamProperty: "Individual",
-        clientProperty: "",
-        locationProperty: "",
-        headerContent: [
-            
-        ],
-        headerButtons: [
-            <a href="https://github.com/nikolay-panovski/TTT_EmbedInCPP/wiki"
-            className="header-btn flex flex-row justify-evenly items-center p-4">
-                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
-                <p className="font-bold text-2xl">See GitHub wiki</p>
-            </a>,
-        ],
-        mainGalleryContent: [
-            <a href="/images/TTT_embed_flow_Cover.png"><img src="/images/TTT_embed_flow_Cover.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
-            <a href="/images/gallery/TTT_Embed/chart1.png"><img src="/images/gallery/TTT_Embed/chart1.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
-            <a href="/images/gallery/TTT_Embed/chart2.png"><img src="/images/gallery/TTT_Embed/chart2.png" alt="Research embedding Lua and JavaScript in C++" /></a>,
-        ],
-        starterParagraphContent: await fetchMarkdownText(MD_TTT_Starter),
-        mainParagraphContent: await fetchMarkdownText(MD_TTT_Main),
-    },
-
-];
-
-export default ListOfProjectContent;
+/**/
