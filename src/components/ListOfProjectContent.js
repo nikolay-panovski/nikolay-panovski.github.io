@@ -79,7 +79,16 @@ const ListOfProjectContent = [
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/relt5flWIDo?si=slNYJiU5it1mC0_T" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         ],
         headerButtons: [
-
+            <a href="https://github.com/nikolay-panovski/SA_TowerDefense/"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">See source code</p>
+            </a>,
+            <a href="https://github.com/nikolay-panovski/SA_TowerDefense/wiki/Design-Justification-Report/"
+            className="header-btn flex flex-row justify-evenly items-center p-4">
+                <img className="pr-2" src={GitHubLogo} alt="GitHub logo" width="48px" height="48px" />
+                <p className="font-bold text-2xl">Code Design Report</p>
+            </a>,
         ],
         mainGalleryContent: [
             <a href="/images/gallery/SA_TowerDefense/BuildPhase.png"><img src="/images/gallery/SA_TowerDefense/BuildPhase.png" alt="Tower defense game with design patterns" /></a>,

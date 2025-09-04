@@ -5,6 +5,14 @@ import ProjectTag from "./ProjectTag";
 function ProjectTagsSelector() {
 
     const usedTags = [
+        "Group Projects",
+        "Student Assignments",
+        "Writeups",
+    ];
+
+    const notUsedTags = [
+        "demo",
+
         "Unity",
         "Godot",
         "JavaScript",
@@ -14,12 +22,6 @@ function ProjectTagsSelector() {
         "Installations",
         "Practical",
         "Research",
-
-    ];
-
-    const notUsedTags = [
-        "demo",
-
     ];
 
     const usedTagsJSX = usedTags.map(tag => <ProjectTag key={tag} name={tag}/>);

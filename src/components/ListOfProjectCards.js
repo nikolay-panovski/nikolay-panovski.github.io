@@ -16,6 +16,117 @@ import GodotLogo from "icons/logo-godot-color.png";
 
 const ListOfProjectCards = [
     {
+        name: "Furfare",
+        coverUrl: "/images/FurfareGameplay_Cover.png",
+        tags: ["Group Projects", "Unity", "UI", "Games", "Practical"],
+        durationDescriber: "Duration",
+        durationProperty: "8 weeks",
+        teamDescriber: "",
+        teamProperty: "2 programmers (Group project)",
+        clientDescriber: "Client",
+        clientProperty: "WIRWAR - Gaming Festival Twente (Netherlands)",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `A "Bomberman Dodgeball" multiplayer party game where animals hit each other with whatever they can pick up!`
+    },
+    {
+        name: "Tower defense prototype",
+        coverUrl: "/images/SA_TD_Game.png",
+        tags: ["Student Assignments", "Unity", "Games", "Practical"],
+        durationDescriber: "Duration",
+        durationProperty: "5 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
+        expandableIcons: [
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `A game created according to OOP design patterns, making possible a variety of towers, shot effects, 
+                    and enemies (with a couple of each included). "Targeted" at people who dislike grass!`
+    },
+    {
+        name: "Godot - First mechanics",
+        coverUrl: "/images/Godot_Cover.png",
+        tags: ["Student Assignments", "Godot", "Games"],
+        durationDescriber: "Duration",
+        durationProperty: "2 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
+        expandableIcons: [
+            { icon: /*<GodotLogo width="30px" height="30px"/>, propertyValue: "Godot"*/
+                <img src={GodotLogo} alt="Godot Engine logo" width="30px" height="30px" />, propertyValue: "Godot"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+        ],
+        cardText: `A sandbox with 5 functional platformer-related assets and 3 small gameplay levels! First project in Godot Engine.`
+    },
+    {
+        name: "Desk Research: Game Feel",
+        coverUrl: "/images/GameFeel_Poster_Cover.png",
+        tags: ["Writeups", "Games", "Research"],
+        durationDescriber: "Duration",
+        durationProperty: "2 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
+        expandableIcons: [
+        ],
+        cardText: `White paper on the topic of game feel, its definition(s) and the need for its better understanding 
+                    and unified vocabulary.`
+    },
+    {
+        name: "Research: Embedding languages for game modding",
+        coverUrl: "/images/TTT_embed_flow_Cover.png",
+        tags: ["Writeups", "JavaScript", "Research"],
+        durationDescriber: "Duration",
+        durationProperty: "2 weeks",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "",
+        clientProperty: "Personal/School assignment",
+        expandableIcons: [
+            { icon: <LuaLogo width="30px" height="30px"/>, propertyValue: "Lua"}, 
+            { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
+            { icon: <CPPLogo width="30px" height="30px"/>, propertyValue: "C++"}, 
+        ],
+        cardText: `I embedded Lua and JavaScript in C++ to measure their performance in simple operations, 
+                    briefly exploring the usage of embedded languages for game modding and scripting.`
+    },
+
+];
+
+export default ListOfProjectCards;
+
+
+// 
+// ====== SHELVED PROJECTS ======
+/**
+    {
+        name: "Web Development Projects",
+        coverUrl: "/images/EASV_WebDev_Cover.png",
+        tags: ["JavaScript", "Practical"],
+        durationDescriber: "",
+        durationProperty: "Various",
+        teamDescriber: "",
+        teamProperty: "Individual",
+        clientDescriber: "Minor",
+        clientProperty: "Web Development (EASV, Denmark)",
+        expandableIcons: [
+            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
+            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
+            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
+            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
+        ],
+        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
+            Integral to building my portfolio site!`
+    },
+    {
         name: "Game jam experiences",
         coverUrl: "/images/GameJamGame2_Cover.png",
         tags: ["Unity", "Games"],
@@ -31,72 +142,6 @@ const ListOfProjectCards = [
         ],
         cardText: `XP Game Jam 2024 with the theme "You can't save them all", approached in two ways - team and solo!
                     Featuring a small raindrop collection game and reflections on the experiences.`
-    },
-    {
-        name: "Godot - First mechanics",
-        coverUrl: "/images/Godot_Cover.png",
-        tags: ["Godot", "Games"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "",
-        clientProperty: "Personal/School assignment",
-        expandableIcons: [
-            { icon: /*<GodotLogo width="30px" height="30px"/>, propertyValue: "Godot"*/
-                <img src={GodotLogo} alt="Godot Engine logo" width="30px" height="30px" />, propertyValue: "Godot"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-        ],
-        cardText: `A sandbox with 5 functional platformer-related assets and 3 small gameplay levels! First project in Godot Engine.`
-    },
-    {
-        name: "Furfare",
-        coverUrl: "/images/FurfareGameplay_Cover.png",
-        tags: ["Unity", "UI", "Games", "Practical"],
-        durationDescriber: "Duration",
-        durationProperty: "8 weeks",
-        teamDescriber: "",
-        teamProperty: "2 programmers (Group project)",
-        clientDescriber: "Client",
-        clientProperty: "WIRWAR - Gaming Festival Twente (Netherlands)",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-        ],
-        cardText: `A "Bomberman Dodgeball" multiplayer party game where animals hit each other with whatever they can pick up!`
-    },
-    {
-        name: "Practical Research: Game Juice",
-        coverUrl: "/images/gamejuiceoverview.jpg",
-        tags: ["Unity", "Games", "UI", "Practical", "Research"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "",
-        clientProperty: "Personal/School assignment",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-            { icon: <img src={ProcessingLogo} alt="Processing engine logo" width="30px" height="30px" />, propertyValue: "Processing (Java)"}, 
-        ],
-        cardText: `I researched and added "juicy" audiovisual effects to two games I worked on previously, 
-                    in an attempt to make them more appealing.`
-    },
-    {
-        name: "Desk Research: Game Feel",
-        coverUrl: "/images/GameFeel_Poster_Cover.png",
-        tags: ["Games", "Research"],
-        durationDescriber: "Duration",
-        durationProperty: "2 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "",
-        clientProperty: "Personal/School assignment",
-        expandableIcons: [
-        ],
-        cardText: `White paper on the topic of game feel, its definition(s) and the need for its better understanding 
-                    and unified vocabulary.`
     },
     {
         name: "City games concept prototype",
@@ -166,45 +211,9 @@ const ListOfProjectCards = [
                     I implemented the software, including a step-by-step tutorial and a game state loop.`
     },
     {
-        name: "Web Development Projects",
-        coverUrl: "/images/EASV_WebDev_Cover.png",
-        tags: ["JavaScript", "Practical"],
-        durationDescriber: "",
-        durationProperty: "Various",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "Minor",
-        clientProperty: "Web Development (EASV, Denmark)",
-        expandableIcons: [
-            { icon: <img src={WebLogo} alt="HTML+CSS+JS logo" width="30px" height="30px" />, propertyValue: "Web"}, 
-            { icon: <img src={VueLogo} alt="Vue logo" width="30px" height="30px" />, propertyValue: "Vue"}, 
-            { icon: <img src={ASPLogo} alt="ASP.NET MVC logo" width="30px" height="30px" />, propertyValue: "ASP.NET"}, 
-            { icon: <MongoDBLogo width="30px" height="30px"/>, propertyValue: "MongoDB"}, 
-        ],
-        cardText: `A collection of smaller projects where I learned about various Web aspects - frontend, backend, CI/CD, frameworks.
-            Integral to building my portfolio site!`
-    },
-    {
-        name: "Tower defense prototype",
-        coverUrl: "/images/SA_TD_Game.png",
-        tags: ["Unity", "Games", "Practical"],
-        durationDescriber: "Duration",
-        durationProperty: "5 weeks",
-        teamDescriber: "",
-        teamProperty: "Individual",
-        clientDescriber: "",
-        clientProperty: "Personal/School assignment",
-        expandableIcons: [
-            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
-            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
-        ],
-        cardText: `A game created according to OOP design patterns, making possible a variety of towers, shot effects, 
-                    and enemies (with a couple of each included). "Targeted" at people who dislike grass!`
-    },
-    {
-        name: "Research: Embedding languages for game modding",
-        coverUrl: "/images/TTT_embed_flow_Cover.png",
-        tags: ["JavaScript", "Research"],
+        name: "Practical Research: Game Juice",
+        coverUrl: "/images/gamejuiceoverview.jpg",
+        tags: ["Unity", "Games", "UI", "Practical", "Research"],
         durationDescriber: "Duration",
         durationProperty: "2 weeks",
         teamDescriber: "",
@@ -212,14 +221,12 @@ const ListOfProjectCards = [
         clientDescriber: "",
         clientProperty: "Personal/School assignment",
         expandableIcons: [
-            { icon: <LuaLogo width="30px" height="30px"/>, propertyValue: "Lua"}, 
-            { icon: <JSLogo width="30px" height="30px"/>, propertyValue: "JavaScript"}, 
-            { icon: <CPPLogo width="30px" height="30px"/>, propertyValue: "C++"}, 
+            { icon: <UnityLogo width="30px" height="30px"/>, propertyValue: "Unity"}, 
+            { icon: <CSLogo width="30px" height="30px"/>, propertyValue: "C#"}, 
+            { icon: <img src={ProcessingLogo} alt="Processing engine logo" width="30px" height="30px" />, propertyValue: "Processing (Java)"}, 
         ],
-        cardText: `I embedded Lua and JavaScript in C++ to measure their performance in simple operations, 
-                    briefly exploring the usage of embedded languages for game modding and scripting.`
+        cardText: `I researched and added "juicy" audiovisual effects to two games I worked on previously, 
+                    in an attempt to make them more appealing.`
     },
 
-];
-
-export default ListOfProjectCards;
+/**/
